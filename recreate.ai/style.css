@@ -1,0 +1,157 @@
+* {
+  font-family: "Montserrat", sans;
+}
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(36, 170, 223);
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  width: 7%;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 0.1vh solid rgb(36, 170, 223);
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.p-cta {
+  padding: 5px 20px;
+  margin: 5px;
+  background-color: #ffffff;
+  color: rgb(36, 170, 223);
+  border: 1px solid rgb(36, 170, 223);
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.cta-btn {
+  margin-left: auto;
+}
+.s-cta {
+  padding: 5px 20px;
+  margin: 5px;
+  background-color: rgb(36, 170, 223);
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.b-cta {
+  padding: 5px 20px;
+  margin: 5px;
+  background-color: rgb(36, 170, 223);
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.p-cta:hover {
+  background-color: rgb(36, 170, 223);
+  color: #ffffff;
+}
+.s-cta:hover,
+.b-cta:hover {
+  background-color: #ffffff;
+  color: rgb(36, 170, 223);
+  border: 1px solid rgb(36, 170, 223);
+}
+
+/* green rgb(81,184,112) */
+.about {
+  background-color: whitesmoke;
+  padding: 50px;
+}
+.desc {
+  margin: 40px;
+}
+
+.top {
+  z-index: 1;
+  position: relative;
+}
+.mid {
+  z-index: 50;
+}
+.bottom {
+  z-index: 40;
+}
+
+#container div {
+  position: absolute;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .images {
+    width: 90%;
+  }
+  .images-a {
+    width: 120%;
+  }
+  .logo {
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+label {
+  margin: 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+}
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: start;
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid rgb(36, 170, 223);
+    margin: 10px;
+  }
+  .nav_links li {
+    border-right: none;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+}
